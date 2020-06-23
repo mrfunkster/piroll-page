@@ -20,6 +20,7 @@ p {
     position: sticky;
     top: 0;
     z-index: 100;
+    overflow: hidden;
 }
 .logo {
     width: 62px;
@@ -78,6 +79,7 @@ p {
         font-size: 14px;
         border: 2px solid #10c9c3;
         border-radius: 5px;
+        background-color: #e9e9e9;
     }
     .nav-menu {
         display: block;
