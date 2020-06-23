@@ -2,6 +2,8 @@ let body         = document.querySelector('body');
 let burgerBtn    = document.querySelector('.header-burger');
 let headerMenu   = document.querySelector('.nav-menu');
 let headerTittle = document.querySelector('.header-tittle')
+let headerBar    = document.querySelector('.header');
+let scrollPos    = 0;
 
 burgerBtn.addEventListener('click', function () {
     if (headerMenu.classList.contains('active') === true) {
@@ -16,3 +18,12 @@ burgerBtn.addEventListener('click', function () {
         body.classList.add('lock');
     }
 });
+
+window.addEventListener('scroll', function() {
+    scrollPos = window.scrollY;
+    if (document.documentElement.clientHeight <= 500 && scrollPos > 5){
+        headerBar.style.backgroundColor = 'rgba(255, 255, 255, .9)';
+    } else {
+        headerBar.style.backgroundColor = 'transparent'
+    }
+})

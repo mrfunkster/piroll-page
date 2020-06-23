@@ -27,7 +27,7 @@ h1 {
     width: 100vw;
     top: 0;
     z-index: 100;
-
+    transition: var(--transition-time);
 }
 .logo {
     width: 62px;
@@ -101,6 +101,7 @@ h1 {
     margin-top: 35px;
     cursor: pointer;
     user-select: none;
+    border-radius: 10px;
     transition: var(--transition-time);
 }
 .button:hover {
@@ -122,7 +123,7 @@ h1 {
         bottom: 30px; 
     }
     to { 
-        bottom: 15px;
+        bottom: 20px;
     }
     }
 
@@ -156,6 +157,11 @@ h1 {
 
 /* Adaptive Grid */
 /* Mobile */
+@media(max-height: 500px) {
+    .home-section {
+        height: 500px;
+    }
+}
 @media(max-width: 767px) {
     body.lock {
         overflow: hidden;
@@ -199,7 +205,7 @@ h1 {
         height: 100%;
         padding: 60px;
         opacity: 0;
-        background: linear-gradient(to bottom, #e9e9e9, rgba(255, 255, 255, 0));
+        background: linear-gradient(to bottom, #e9e9e9 50%, rgba(255, 255, 255, 0) 100%);
         z-index: 20;
         transition: var(--transition-time);
     }
@@ -280,6 +286,7 @@ h1 {
     .nav-menu a {
         padding: 10px;
     }
+
     .homescreen-content p {
         line-height: 28px;
         font-size: 17px;
