@@ -9,6 +9,9 @@ let homeScrollBtn    = document.querySelector('.home-arrow');
 let aboutUsSection   = document.querySelector('.about-us-section');
 let degSection       = document.querySelector('.deg-section');
 let processSection   = document.querySelector('.work-process-section');
+let servicesSection  = document.querySelector('.features-section');
+let testimonals      = document.querySelector('.slider-section');
+let contactSection   = document.querySelector('.contact-section');
 let playerButton     = document.querySelector('.play-button');
 let playerThumb      = document.querySelector('.player-overlay');
 let headerHeightFull = 100;
@@ -60,6 +63,15 @@ window.addEventListener('scroll', function() {
     }
     if (scrollPos >= (processSection.offsetTop - headerHeight)) {
         headerTittle.innerHTML = "Process";
+    }
+    if (scrollPos >= (servicesSection.offsetTop - headerHeight)) {
+        headerTittle.innerHTML = "Services";
+    }
+    if (scrollPos >= (testimonals.offsetTop - headerHeight)) {
+        headerTittle.innerHTML = "Testimonals";
+    }
+    if (scrollPos >= (contactSection.offsetTop - headerHeight)) {
+        headerTittle.innerHTML = "Contact";
     }
 })
 
