@@ -8,6 +8,8 @@ let profSkillSection = document.querySelector('.professional-skill');
 let homeScrollBtn    = document.querySelector('.home-arrow');
 let aboutUsSection   = document.querySelector('.about-us-section');
 let degSection       = document.querySelector('.deg-section');
+let playerButton     = document.querySelector('.play-button');
+let playerThumb      = document.querySelector('.player-overlay');
 let headerHeightFull = 100;
 let headerHeightMin  = 60;
 let scrollPos        = 0;
@@ -59,6 +61,10 @@ window.addEventListener('scroll', function() {
 
 homeScrollBtn.addEventListener('click', function() {
     scrollTo(aboutUsSection);
+})
+
+playerButton.addEventListener('click', function() {
+    playerThumb.classList.add('hide');
 })
 
 function progress() {
