@@ -106,11 +106,13 @@ h3 {
 }
 .button {
     width: 180px;
-    height: 54px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
     background-color: #10c9c3;
     text-transform: uppercase;
-    text-align: center;
-    line-height: 54px;
     font-weight: 500;
     font-size: 12px;
     color: white;

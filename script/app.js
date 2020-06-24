@@ -5,6 +5,8 @@ let headerTittle     = document.querySelector('.header-tittle')
 let headerBar        = document.querySelector('.header');
 let topBars          = document.querySelectorAll('.top-bar');
 let profSkillSection = document.querySelector('.professional-skill');
+let homeScrollBtn    = document.querySelector('.home-arrow');
+let aboutUsSection   = document.querySelector('.about-us-section');
 let scrollPos        = 0;
 let isDone           = false;
 
@@ -36,6 +38,9 @@ window.addEventListener('scroll', function() {
     }
 })
 
+homeScrollBtn.addEventListener('click', function() {
+    scrollTo(aboutUsSection);
+})
 
 function progress() {
     for(let topBar of topBars) {
@@ -53,4 +58,12 @@ function progress() {
         }
     }
     return true;
+}
+
+function scrollTo(element) {
+    window.scroll({
+        left: 0,
+        top: (element.offsetTop - 100),
+        behavior: 'smooth'
+    })
 }
