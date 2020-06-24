@@ -481,6 +481,42 @@ form .button {
     margin: 0;
 }
 
+/* Footer */
+.footer {
+    background-color: #141414;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer-row {}
+.footer h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.footer p {
+    color: #bcbcbc;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.07px;
+    margin: 0;
+}
+.anchors a {
+    text-decoration: none;
+    color: #bcbcbc;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+
+}
+.copyright, .contacts, .anchors {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 /* Adaptive Grid */
 /* Mobile */
 @media(max-height: 500px) {
@@ -611,6 +647,14 @@ form .button {
     }
     .deg-section-content:last-child {
         padding-bottom: 50px;
+    }
+    .copyright {
+        order: 4;
+        text-align: center;
+    }
+    .contacts {
+        order: 5;
+        text-align: center;
     }
 }
 /* Tablet */
