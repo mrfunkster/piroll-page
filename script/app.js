@@ -1,9 +1,14 @@
-let body         = document.querySelector('body');
-let burgerBtn    = document.querySelector('.header-burger');
-let headerMenu   = document.querySelector('.nav-menu');
-let headerTittle = document.querySelector('.header-tittle')
-let headerBar    = document.querySelector('.header');
-let scrollPos    = 0;
+let body             = document.querySelector('body');
+let burgerBtn        = document.querySelector('.header-burger');
+let headerMenu       = document.querySelector('.nav-menu');
+let headerTittle     = document.querySelector('.header-tittle')
+let headerBar        = document.querySelector('.header');
+let topBars          = document.querySelectorAll('.top-bar');
+let profSkillSection = document.querySelector('.professional-skill');
+let scrollPos        = 0;
+let isDone           = false;
+
+let porfSkillPos = profSkillSection.offsetTop;
 
 burgerBtn.addEventListener('click', function () {
     if (headerMenu.classList.contains('active') === true) {
@@ -22,8 +27,30 @@ burgerBtn.addEventListener('click', function () {
 window.addEventListener('scroll', function() {
     scrollPos = window.scrollY;
     if ((document.documentElement.clientHeight <= 500 && scrollPos > 5) || scrollPos > 50){
-        headerBar.style.backgroundColor = 'rgba(255, 255, 255, .9)';
+        headerBar.style.backgroundColor = 'rgba(255, 255, 255, .95)';
     } else {
         headerBar.style.backgroundColor = 'transparent'
+    };
+    if (scrollPos >= (porfSkillPos - (document.documentElement.clientHeight / 2)) && isDone === false) {
+        isDone = progress();
     }
 })
+
+
+function progress() {
+    for(let topBar of topBars) {
+        let skillPerc = topBar.parentElement.parentElement.firstElementChild.lastElementChild.textContent;
+        skillPerc = +skillPerc.substr(0, skillPerc.length - 1);
+        let width = 1;
+        let id = setInterval(progressStatus, 20);
+        function progressStatus() {
+            if (width >= skillPerc) {
+                clearInterval(id);
+            } else {
+                width++
+                topBar.style.width = width + '%';
+            }
+        }
+    }
+    return true;
+}
