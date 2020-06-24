@@ -21,7 +21,7 @@ burgerBtn.addEventListener('click', function () {
 
 window.addEventListener('scroll', function() {
     scrollPos = window.scrollY;
-    if (document.documentElement.clientHeight <= 500 && scrollPos > 5){
+    if ((document.documentElement.clientHeight <= 500 && scrollPos > 5) || scrollPos > 50){
         headerBar.style.backgroundColor = 'rgba(255, 255, 255, .9)';
     } else {
         headerBar.style.backgroundColor = 'transparent'
