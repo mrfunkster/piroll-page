@@ -15,6 +15,7 @@ let isDone           = false;
 
 let porfSkillPos = profSkillSection.offsetTop;
 
+
 burgerBtn.addEventListener('click', function () {
     if (headerMenu.classList.contains('active') === true) {
         headerMenu.classList.remove('active');
@@ -31,12 +32,12 @@ burgerBtn.addEventListener('click', function () {
 
 window.addEventListener('scroll', function() {
     let headerHeight;
-    scrollPos = window.scrollY;
     if (document.documentElement.clientWidth < 768) {
         headerHeight = headerHeightMin;
     } else {
         headerHeight = headerHeightFull;
     };
+    scrollPos = window.scrollY;
     if ((document.documentElement.clientHeight <= 500 && scrollPos > 5) || scrollPos > 50){
         headerBar.style.backgroundColor = 'rgba(255, 255, 255, .95)';
     } else {
@@ -79,6 +80,12 @@ function progress() {
 }
 
 function scrollTo(element) {
+    let headerHeight;
+    if (document.documentElement.clientWidth < 768) {
+        headerHeight = headerHeightMin;
+    } else {
+        headerHeight = headerHeightFull;
+    };
     window.scroll({
         left: 0,
         top: (element.offsetTop - headerHeight),
