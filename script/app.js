@@ -8,6 +8,7 @@ let profSkillSection = document.querySelector('.professional-skill');
 let homeScrollBtn    = document.querySelector('.home-arrow');
 let aboutUsSection   = document.querySelector('.about-us-section');
 let degSection       = document.querySelector('.deg-section');
+let processSection   = document.querySelector('.work-process-section');
 let playerButton     = document.querySelector('.play-button');
 let playerThumb      = document.querySelector('.player-overlay');
 let headerHeightFull = 100;
@@ -56,6 +57,9 @@ window.addEventListener('scroll', function() {
     }
     if (scrollPos >= (degSection.offsetTop - headerHeight)) {
         headerTittle.innerHTML = "Work";
+    }
+    if (scrollPos >= (processSection.offsetTop - headerHeight)) {
+        headerTittle.innerHTML = "Process";
     }
 })
 
