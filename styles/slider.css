@@ -159,7 +159,7 @@
     }
 }
 
-@media(max-width: 1999px) {
+@media(min-width: 768px) {
     .slider-content h2 {
         line-height: 24px;
         font-weight: 500;
@@ -169,5 +169,20 @@
     .slider__wrapper {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .slider-content h2 {
+        line-height: 36px;
+        font-size: 24px;
+        letter-spacing: .3px;
+    }
+    .slider-content p {
+        font-size: 12px;
+    }
+    .slider__wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }

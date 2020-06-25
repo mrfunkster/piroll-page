@@ -735,4 +735,8 @@ form .button {
         padding-bottom: 165px;
         padding-right: 85px;
     }
+    .slider-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
