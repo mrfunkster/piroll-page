@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header header-white">
+    <header id="header" class="header header-white">
         <div class="container">
             <div class="row header-row">
                 <div class="col logo">
@@ -28,7 +28,7 @@
                         <ul class="nav-menu">
                             <li><a href="index.html">Welcome</a></li>
                             <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html" class="active">About</a></li>
+                            <li><a href="#about-page" class="active">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -37,7 +37,7 @@
         </div>
     </header>
     <main class="main header-padding">
-        <section class="about-us-section about-page">
+        <section id="about-page" class="about-us-section about-page">
             <div class="about-overlay"></div>
             <div class="container">
                 <div class="row centered">
@@ -190,6 +190,12 @@
             </div>
         </div>
     </div>
+    <div class="scroll-up">
+        <a href="#about-page"></a>
+        <div class="scroll-up-arrow"></div>
+    </div>
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/scroll.js"></script>
     <script src="script/burger.js"></script>
     <script src="script/modal.js"></script>
 </body>

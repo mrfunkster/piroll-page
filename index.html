@@ -27,13 +27,13 @@
                     </div>
                     <nav>
                         <ul class="nav-menu">
-                            <li><a class="active" href="index.html">Welcome</a></li>
+                            <li><a class="active" href="#home-section">Welcome</a></li>
                             <li><a href="home.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="">Work</a></li>
-                            <li><a href="">Process</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Testimonials</a></li>
+                            <li><a href="#work-section">Work</a></li>
+                            <li><a href="#work-process-section">Process</a></li>
+                            <li><a href="#features-section">Services</a></li>
+                            <li><a href="#sponsor-section">Testimonials</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
                     </nav>
@@ -42,20 +42,24 @@
         </div>
     </header>
     <main class="main">
-        <section class="home-section">
+        <section id="home-section" class="home-section">
             <img src="images/home_screen.jpeg" alt="">
             <div class="container homescreen-container">
                 <div class="row homescreen-row">
                     <div class="col-sm-12 col-md-6 col-lg-5 homescreen-content">
                         <h1>We Design and Develop</h1>
                         <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
-                        <div id="contact-us" class="button">Contact us</div>
+                        <div id="contact-us" class="button">
+                            <a href="#contact-section">Contact us</a>
+                        </div>
                     </div>
                 </div>
-                <div class="home-arrow"></div>
+                <div>
+                    <a class="home-arrow" href="#contact-section"></a>
+                </div>
             </div>
         </section>
-        <section class="about-us-section">
+        <section id="about-us-section" class="about-us-section">
             <div class="container">
                 <div class="row centered">
                     <div class="col about-us-content">
@@ -70,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="professional-skill">
+        <section id="professional-skill" class="professional-skill">
             <div class="professional-skill-background">
                 <img src="images/profskillbackground.png" alt="">
             </div>
@@ -114,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="deg-section">
+        <section id="deg-section" class="deg-section">
             <div class="container">
                 <div class="row deg-section-row">
                     <div class="col-sm-12 col-md-6 col-lg-3 deg-section-content">
@@ -156,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="work-section">
+        <section id="work-section" class="work-section">
             <div class="row work-section-row">
                 <div class="col-sm-12 col-md-6 col-lg-3 work-card">
                     <img src="images/work01.jpg" alt="">
@@ -225,7 +229,7 @@
             </div>
             <div class="load-more-button">Load more work</div>
         </section>
-        <section class="work-process-section">
+        <section id="work-process-section" class="work-process-section">
             <div class="container">
                 <div class="row centered">
                     <div class="col work-process-content">
@@ -248,7 +252,7 @@
                 </div>
             </div>
         </section>
-        <section class="features-section">
+        <section id="features-section" class="features-section">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3 features-content">
@@ -310,7 +314,7 @@
                 </div>
             </div>
         </section>
-        <section class="slider-section">
+        <section id="slider-section" class="slider-section">
             <div class="container">
                 <div class="slider">
                     <div class="slider__wrapper">
@@ -340,7 +344,7 @@
                 </div>
             </div>
         </section>
-        <section class="sponsor-section">
+        <section id="sponsor-section" class="sponsor-section">
             <div class="container">
                 <div class="row sponsor-row">
                     <div class="col sponsor-content">
@@ -361,7 +365,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section id="contact-section" class="contact-section">
             <div class="container">
                 <div class="row centered">
                     <div class="col contact-content">
@@ -431,8 +435,14 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-up">
+        <a href="#home-section"></a>
+        <div class="scroll-up-arrow"></div>
+    </div>
+    <script src="script/jquery-3.5.1.min.js"></script>
     <script src="script/app.js"></script>
     <script src="script/burger.js"></script>
     <script src="script/slider.js"></script>
+    <script src="script/scroll.js"></script>
 </body>
 </html>

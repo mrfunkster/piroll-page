@@ -27,7 +27,7 @@
                     <nav>
                         <ul class="nav-menu">
                             <li><a href="index.html">Welcome</a></li>
-                            <li><a href="home.html" class="active">Home</a></li>
+                            <li><a href="#home" class="active">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
@@ -37,7 +37,7 @@
         </div>
     </header>
     <main class="main header-padding">
-        <section class="about-us-section light-grey">
+        <section id="home" class="about-us-section light-grey">
             <div class="container">
                 <div class="row centered">
                     <div class="col about-us-content">
@@ -188,6 +188,12 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-up">
+        <a href="#home"></a>
+        <div class="scroll-up-arrow"></div>
+    </div>
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/scroll.js"></script>
     <script src="script/burger.js"></script>
 </body>
 </html>

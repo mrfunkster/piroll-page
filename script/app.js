@@ -12,8 +12,6 @@ let contactSection   = document.querySelector('.contact-section');
 let playerButton     = document.querySelector('.play-button');
 let playerThumb      = document.querySelector('.player-overlay');
 let contactUsBtn     = document.querySelector('#contact-us');
-let headerHeightFull = 100;
-let headerHeightMin  = 60;
 let scrollPos        = 0;
 let isDone           = false;
 
@@ -79,25 +77,4 @@ function progress() {
         }
     }
     return true;
-}
-
-homeScrollBtn.addEventListener('click', function() {
-    scrollTo(aboutUsSection);
-})
-contactUsBtn.addEventListener('click', function() {
-    scrollTo(contactSection);
-})
-
-function scrollTo(element) {
-    let headerHeight;
-    if (document.documentElement.clientWidth < 768) {
-        headerHeight = headerHeightMin;
-    } else {
-        headerHeight = headerHeightFull;
-    };
-    window.scroll({
-        left: 0,
-        top: (element.offsetTop - headerHeight),
-        behavior: 'smooth'
-    })
 }

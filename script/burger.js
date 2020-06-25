@@ -4,6 +4,10 @@ let headerMenu       = document.querySelector('.nav-menu');
 let headerTittle     = document.querySelector('.header-tittle');
 
 burgerBtn.addEventListener('click', function () {
+    useBurger();
+});
+
+function useBurger() {
     if (headerMenu.classList.contains('active') === true) {
         headerMenu.classList.remove('active');
         burgerBtn.classList.remove('active');
@@ -15,4 +19,11 @@ burgerBtn.addEventListener('click', function () {
         headerTittle.classList.add('active');
         body.classList.add('lock');
     }
-});
+}
+
+function removeBurger() {
+    headerMenu.classList.remove('active');
+    burgerBtn.classList.remove('active');
+    headerTittle.classList.remove('active');
+    body.classList.remove('lock');
+}
