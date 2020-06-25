@@ -603,6 +603,7 @@ form .button {
     visibility: hidden;
     opacity: 0;
     transition: var(--transition-time);
+    overflow: auto;
 }
 .modal-row {
     margin: 0;

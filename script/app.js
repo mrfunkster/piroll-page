@@ -1,7 +1,4 @@
-let body             = document.querySelector('body');
-let burgerBtn        = document.querySelector('.header-burger');
-let headerMenu       = document.querySelector('.nav-menu');
-let headerTittle     = document.querySelector('.header-tittle')
+let headerTittle     = document.querySelector('.header-tittle');
 let headerBar        = document.querySelector('.header');
 let topBars          = document.querySelectorAll('.top-bar');
 let profSkillSection = document.querySelector('.professional-skill');
@@ -14,27 +11,13 @@ let testimonals      = document.querySelector('.slider-section');
 let contactSection   = document.querySelector('.contact-section');
 let playerButton     = document.querySelector('.play-button');
 let playerThumb      = document.querySelector('.player-overlay');
+let contactUsBtn     = document.querySelector('#contact-us');
 let headerHeightFull = 100;
 let headerHeightMin  = 60;
 let scrollPos        = 0;
 let isDone           = false;
 
 let porfSkillPos = profSkillSection.offsetTop;
-
-
-burgerBtn.addEventListener('click', function () {
-    if (headerMenu.classList.contains('active') === true) {
-        headerMenu.classList.remove('active');
-        burgerBtn.classList.remove('active');
-        headerTittle.classList.remove('active');
-        body.classList.remove('lock');
-    } else {
-        headerMenu.classList.add('active');
-        burgerBtn.classList.add('active');
-        headerTittle.classList.add('active');
-        body.classList.add('lock');
-    }
-});
 
 window.addEventListener('scroll', function() {
     let headerHeight;
@@ -75,9 +58,6 @@ window.addEventListener('scroll', function() {
     }
 })
 
-homeScrollBtn.addEventListener('click', function() {
-    scrollTo(aboutUsSection);
-})
 
 playerButton.addEventListener('click', function() {
     playerThumb.classList.add('hide');
@@ -100,6 +80,13 @@ function progress() {
     }
     return true;
 }
+
+homeScrollBtn.addEventListener('click', function() {
+    scrollTo(aboutUsSection);
+})
+contactUsBtn.addEventListener('click', function() {
+    scrollTo(contactSection);
+})
 
 function scrollTo(element) {
     let headerHeight;
