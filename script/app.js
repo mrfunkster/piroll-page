@@ -53,7 +53,7 @@ window.addEventListener('scroll', function() {
         isDone = progress();
     };
     if (scrollPos < (aboutUsSection.offsetTop - headerHeight)) {
-        headerTittle.innerHTML = "Home"
+        headerTittle.innerHTML = "Welcome"
     }
     if (scrollPos >= (aboutUsSection.offsetTop - headerHeight)) {
         headerTittle.innerHTML = "About";

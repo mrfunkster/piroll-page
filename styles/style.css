@@ -517,6 +517,22 @@ form .button {
     padding-bottom: 15px;
 }
 
+/* ADDITIONAL STYLES */
+
+
+.light-grey {
+    background-color: #f6f6f6;
+}
+.header-white {
+    background-color: rgba(255, 255, 255, .95);
+}
+.header-padding {
+    padding-top: 60px;
+}
+.green-overlay {
+    background-color: #10c9c3;
+}
+
 /* Adaptive Grid */
 /* Mobile */
 @media(max-height: 500px) {
@@ -662,6 +678,9 @@ form .button {
     .header {
         height: 80px;
     }
+    .header-padding {
+        padding-top: 80px;
+    }
     .nav-menu {
         display: flex;
     }
@@ -740,3 +759,4 @@ form .button {
         padding-bottom: 60px;
     }
 }
+
