@@ -487,10 +487,10 @@ form .button {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.footer-row {}
 .footer h4 {
     font-size: 18px;
     font-weight: 500;
+    padding-top: 10px;
     color: #ffffff;
     margin-bottom: 20px;
 }
