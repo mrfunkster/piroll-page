@@ -1,4 +1,4 @@
-let headerTittle     = document.querySelector('.header-tittle');
+
 let headerBar        = document.querySelector('.header');
 let topBars          = document.querySelectorAll('.top-bar');
 let profSkillSection = document.querySelector('.professional-skill');

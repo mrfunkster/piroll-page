@@ -1,6 +1,7 @@
 let body             = document.querySelector('body');
 let burgerBtn        = document.querySelector('.header-burger');
 let headerMenu       = document.querySelector('.nav-menu');
+let headerTittle     = document.querySelector('.header-tittle');
 
 burgerBtn.addEventListener('click', function () {
     if (headerMenu.classList.contains('active') === true) {
