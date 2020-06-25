@@ -10,12 +10,15 @@ for (let anchor of anchors) {
     // this.classList.add('active');
     let viewportWidth = document.documentElement.clientWidth;
     let headerOffset;
-    if(viewportWidth < 1200) {
+    if(viewportWidth < 768) {
         headerOffset = headerHeightMin;
         removeBurger();
+    } else if(viewportWidth < 1200){
+        headerOffset = 80;
     } else {
-        headerOffset = headerHeightFull;
+        headerOffset = headerHeightFull
     }
+     
     const blockID = anchor.getAttribute('href').substr(1);
     let block = document.getElementById(blockID);
     $('html, body').animate({
