@@ -10,7 +10,7 @@ for (let anchor of anchors) {
     // this.classList.add('active');
     let viewportWidth = document.documentElement.clientWidth;
     let headerOffset;
-    if(viewportWidth < 768) {
+    if(viewportWidth < 1200) {
         headerOffset = headerHeightMin;
         removeBurger();
     } else {

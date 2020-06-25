@@ -19,7 +19,7 @@ let porfSkillPos = profSkillSection.offsetTop;
 
 window.addEventListener('scroll', function() {
     let headerHeight;
-    if (document.documentElement.clientWidth < 768) {
+    if (document.documentElement.clientWidth < 1200) {
         headerHeight = headerHeightMin;
     } else {
         headerHeight = headerHeightFull;
