@@ -420,8 +420,8 @@ h3 {
 
 /* Slider */
 .slider-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #10c9c3;
 }
 
@@ -704,8 +704,8 @@ form .button {
         padding-bottom: 100px;
     }
     .slider-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .sponsor-section {
         padding-top: 20px;
