@@ -579,6 +579,79 @@ form .button {
     justify-content: center;
     flex-direction: column;
 }
+.contact-form {
+    background-color: #f6f6f6;
+}
+.modal-form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+.modal-tittle {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-time);
+}
+.modal-row {
+    margin: 0;
+}
+.close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+.close-btn::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 4px;
+    background-color: #787878;
+    transform-origin: center;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    transition: var(--transition-time);
+}
+.close-btn::after {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 4px;
+    background-color: #787878;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    transition: var(--transition-time);
+}
+
+.close-btn:hover::before,
+.close-btn:hover::after {
+    background-color: #10c9c3;
+}
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+.lock {
+    overflow: hidden;
+}
+
 
 /* Adaptive Grid */
 /* Mobile */
@@ -718,6 +791,13 @@ form .button {
     .contacts {
         order: 5;
         text-align: center;
+    }
+    .modal-tittle h2 {
+        font-size: 20px;
+    }
+    .close-btn {
+        right: 10px;
+        top: 10px;
     }
 }
 /* Tablet */

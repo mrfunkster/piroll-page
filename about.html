@@ -115,7 +115,7 @@
                     <div class="col contact-content about-contact">
                         <h2>Need a Project?</h2>
                         <p>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
-                        <div class="button">let’s talk</div>
+                        <div id="contact-modal" class="button">let’s talk</div>
                     </div>
                 </div>
             </div>
@@ -159,5 +159,37 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal-block">
+            <div class="container">
+                <div class="row centered modal-row">
+                    <div class="col-sm-12 col-md-10 col-lg-7 contact-form modal-form">
+                        <div class="close-btn"></div>
+                        <form action="">
+                            <div class="row centered">
+                                <div class="col-sm-12 col-md-12 col-lg-12 modal-tittle">
+                                    <h2>Need a Project?</h2>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 input-name">
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 input-mail">
+                                    <input type="email" placeholder="Your E-Mail">
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12 input-tittle">
+                                    <input type="text" placeholder="Your Tittle">
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12 input-tittle">
+                                    <textarea placeholder="Your Comment" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div id="send-contact" class="button">Send Message</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/modal.js"></script>
 </body>
 </html>
