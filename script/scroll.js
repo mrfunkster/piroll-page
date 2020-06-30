@@ -18,7 +18,7 @@ for (let anchor of anchors) {
     } else {
         headerOffset = headerHeightFull
     }
-     
+    
     const blockID = anchor.getAttribute('href').substr(1);
     let block = document.getElementById(blockID);
     $('html, body').animate({
