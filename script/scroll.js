@@ -7,8 +7,6 @@ let headerHeightMin  = 60;
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
     e.preventDefault()
-    anchors.forEach(btn => btn.classList.remove('active'));
-    this.classList.add('active');
     let viewportWidth = document.documentElement.clientWidth;
     let headerOffset;
     if(viewportWidth < 768) {
@@ -23,7 +21,7 @@ for (let anchor of anchors) {
     const blockID = anchor.getAttribute('href').substr(1);
     let block = document.getElementById(blockID);
     $('html, body').animate({
-        scrollTop: $(block).offset().top - headerOffset
+        scrollTop: $(block).offset().top - headerOffset + 1
     }, 800);
     })
 }
