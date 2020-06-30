@@ -1,6 +1,7 @@
 const anchors = document.querySelectorAll('a[href*="#"]');
 let scrollUpArrow = document.querySelector('.scroll-up');
 let headerHeightFull = 100;
+let headerTablet = 80;
 let headerHeightMin  = 60;
 
 for (let anchor of anchors) {
@@ -14,7 +15,7 @@ for (let anchor of anchors) {
         headerOffset = headerHeightMin;
         removeBurger();
     } else if(viewportWidth < 1200){
-        headerOffset = 80;
+        headerOffset = headerTablet;
     } else {
         headerOffset = headerHeightFull
     }

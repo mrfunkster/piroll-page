@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
     if (document.documentElement.clientWidth < 768) {
         headerHeight = headerHeightMin;
     } else if (document.documentElement.clientWidth < 1200) {
-        headerHeight = 80;
+        headerHeight = headerTablet;
     } else {
         headerHeight = headerHeightFull;
     };
