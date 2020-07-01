@@ -923,7 +923,7 @@ form .button {
         height: 80px;
     }
     .header-padding {
-        padding-top: 100px;
+        padding-top: 80px;
     }
     .nav-menu {
         display: flex;
@@ -998,6 +998,9 @@ form .button {
 @media(min-width: 1200px) {
     .header {
         height: 100px;
+    }
+    .header-padding {
+        padding-top: 100px;
     }
     .nav-menu a {
         padding: 15px;

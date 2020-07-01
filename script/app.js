@@ -4,6 +4,7 @@ let topBars          = document.querySelectorAll('.top-bar');
 let profSkillSection = document.querySelector('.professional-skill');
 let homeScrollBtn    = document.querySelector('.home-arrow');
 let aboutUsSection   = document.querySelector('.about-us-section');
+let workSection      = document.querySelector('.work-section');
 let degSection       = document.querySelector('.deg-section');
 let processSection   = document.querySelector('.work-process-section');
 let servicesSection  = document.querySelector('.features-section');
@@ -22,7 +23,7 @@ window.addEventListener('scroll', function() {
     if (document.documentElement.clientWidth < 768) {
         headerHeight = headerHeightMin;
     } else if (document.documentElement.clientWidth < 1200) {
-        headerHeight = headerTablet;
+        headerHeight = headerTabletƒ;
     } else {
         headerHeight = headerHeightFull;
     };
@@ -41,7 +42,7 @@ window.addEventListener('scroll', function() {
     if (scrollPos >= (aboutUsSection.offsetTop - headerHeight)) {
         headerTittle.innerHTML = "About";
     }
-    if (scrollPos >= (degSection.offsetTop - headerHeight)) {
+    if (scrollPos >= (workSection.offsetTop - headerHeight)) {
         headerTittle.innerHTML = "Work";
     }
     if (scrollPos >= (processSection.offsetTop - headerHeight)) {
