@@ -1,5 +1,7 @@
 const headerTabs = document.querySelectorAll('.tabs-header-item');
 const contentTabs = document.querySelectorAll('.tabs-content-item');
+let prevClientWidth = this.outerWidth;
+
 
 for (let headerTab of headerTabs) {
     headerTab.addEventListener('click', function(e) {
@@ -20,8 +22,12 @@ for (let headerTab of headerTabs) {
 };
 
 getMaxHeight();
-window.onresize = function () {
-    getMaxHeight();    
+window.onresize = function (e) {
+    let currentClientWidth = e.target.outerWidth;
+    if (currentClientWidth != prevClientWidth) {
+        prevClientWidth = currentClientWidth;
+        getMaxHeight();
+    }
 }
 
 function getMaxHeight() {
